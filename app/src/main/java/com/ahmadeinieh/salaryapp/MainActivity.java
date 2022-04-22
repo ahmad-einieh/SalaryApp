@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
                     } else {
                         Toast.makeText(MainActivity.this, "invalid value", Toast.LENGTH_SHORT).show();
                     }
+                    v1.setText("your salary is: " + result + " $");
                 } else if (st.equalsIgnoreCase("s")) {
                     if (age < 3) {
                         result = 1500 + (ex * 50) + (age * 150);
@@ -59,12 +60,12 @@ public class MainActivity extends AppCompatActivity {
                     } else {
                         Toast.makeText(MainActivity.this, "invalid value", Toast.LENGTH_SHORT).show();
                     }
-
+                    v1.setText("your salary is: " + result + " $");
                 } else {
+                    v1.setText("");
                     Toast.makeText(MainActivity.this, "m or s", Toast.LENGTH_SHORT).show();
-
                 }
-                v1.setText("your salary is: " + result + " $");
+
                 //Toast.makeText(MainActivity.this, t1.getText().toString(), Toast.LENGTH_LONG).show();
             }
         });
